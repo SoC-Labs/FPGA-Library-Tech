@@ -1,0 +1,8 @@
+FPGA Library Tech
+Copyright 2021-2026 SoC Labs (www.soclabs.org), University of Southampton
+
+This repository is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Arm IP is NOT included. These are SoC Labs models with an AHB-Lite interface.
+Names such as "cmsdk_*" refer to Arm components by name only; nothing in the
+Apache License grants any right to Arm IP.

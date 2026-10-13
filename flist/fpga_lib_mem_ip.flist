@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------
+// FPGA Library Memory Filelist
+// Contributors
+//
+// David Mapstone (d.a.mapstone@soton.ac.uk)
+//
+// Copyright 2021-2026 SoC Labs (www.soclabs.org), University of Southampton
+// SPDX-License-Identifier: Apache-2.0
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+// Abstract : Verilog Command File for NanoSoC Testbench
+//-----------------------------------------------------------------------------
+
+// ============= Verilog library extensions ===========
++libext+.v+.vlib
+
+// =============    NanoSoC Testbench search path    =============
+// +incdir+$(SOCLABS_FPGA_LIB_TECH_DIR)/sram/verilog/
+
+// - Top-level testbench
+$(SOCLABS_FPGA_LIB_TECH_DIR)/sram/verilog/sl_ahb_sram.v
+// sl_fpga_rom_word.v is empty unless RAM_PRELOAD_WORD is defined; see sl_ahb_rom.v
+$(SOCLABS_FPGA_LIB_TECH_DIR)/rom/verilog/sl_fpga_rom_word.v
+$(SOCLABS_FPGA_LIB_TECH_DIR)/rom/verilog/sl_ahb_rom.v
